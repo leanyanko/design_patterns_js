@@ -11,7 +11,7 @@ class Magazine {
 
     publish(reason) { //reason = "special" or month
         // console.log(`${reason} from ${this.name} was just published`);
-        this.subscribers.forEach( subscriber => subscriber.notify(this.name, reason));
+        this.subscribers.forEach( subscriber => subscriber.notify("magazine", this.name, reason));
     }
 }
 
